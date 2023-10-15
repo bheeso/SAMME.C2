@@ -9,9 +9,7 @@ SAMME.C2 leverages the power of both SAMME and cost-sensitive learning to enhanc
 
 The following algorithm describes `SAMME.C2`, a cost-sensitive multi-class AdaBoost algorithm:
 
-<img src="SAMME.C2.png" alt="Alt Text" width="200"/>
-
-![Alt Text](SAMME.C2.png)
+<img src="SAMME.C2.png" alt="Alt Text" width="300"/>
 
 # Usage
 Please refer to the Python test file named samme_c2_test.ipynb for assessing the SAMME.C2 coding. This file contains test cases and usage examples for the SAMME.C2 algorithm. 
