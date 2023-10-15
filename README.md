@@ -31,6 +31,7 @@ The following algorithm describes `SAMME.C2`, a cost-sensitive multi-class AdaBo
 	}
 	\caption{\texttt{SAMME.C2}: Cost-sensitive multi-class AdaBoost}\label{alg:sammec2}
 \end{algorithm}
+```
 
 # Usage
 Please refer to the Python test file named samme_c2_test.ipynb for assessing the SAMME.C2 coding. This file contains test cases and usage examples for the SAMME.C2 algorithm. 
