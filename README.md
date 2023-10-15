@@ -9,29 +9,7 @@ SAMME.C2 leverages the power of both SAMME and cost-sensitive learning to enhanc
 
 The following algorithm describes `SAMME.C2`, a cost-sensitive multi-class AdaBoost algorithm:
 
-```latex
-\begin{algorithm}[H]
-\LinesNumberedHidden
-\SetAlgoNoLine
-	\KwData{$\ \bm{x}_i \in X$, $y_i \in Y = \{1,2,\ldots,K\}$}
-	\KwIn{$C(y_i) \in (0,1]$, $T$}
-	\KwOut{Final classifier $\ H(\bm{x}_i)= \underset{k}{\mathrm{argmax}} {\  \sum_{t=1}^{T} \alpha_t I(h_t(\bm{x}_i) = k)}$}
-	Set initial sample weights to be equally distributed:  $D_1(i) = \frac{1}{N}, \quad i =1,2,\ldots,N$ \;
-	
-	\For{$t=1, \ldots, T$}{
-		Train weak classifier using distribution $D_t$\;
-		
-		Obtain weak classifier $h_t: X \rightarrow k \in \{1,2,\ldots,K\}$\; 
-		
-		Compute error rate  $\epsilon_t = \dfrac{\sum_{i=1}^{N} D_t(i) I(y_i \ne h_t(\bm{x}_i))}{\sum_{i=1}^N D_t(i)}$ \;
-		
-		Calculate weight $\alpha_t = \log\!\Big(\dfrac{1-\epsilon_t}{\epsilon_t}\Big) + \log(K-1)$ \;
-		
-		Update sample weights $D_{t+1}(i) = \dfrac{C(y_i) \, D_t(i) \exp(-\alpha_t I(y_i = h_t(\bm{x}_i)))}{\sum_{j=1}^{N} C(y_j) \, D_t(j) \exp(-\alpha_t I(y_j = h_t(\bm{x}_j)))}$ \;
-	}
-	\caption{\texttt{SAMME.C2}: Cost-sensitive multi-class AdaBoost}\label{alg:sammec2}
-\end{algorithm}
-```
+![Alt Text](SAMME.C2.png)
 
 # Usage
 Please refer to the Python test file named samme_c2_test.ipynb for assessing the SAMME.C2 coding. This file contains test cases and usage examples for the SAMME.C2 algorithm. 
