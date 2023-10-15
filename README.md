@@ -7,6 +7,9 @@ SAMME.C2 leverages the power of both SAMME and cost-sensitive learning to enhanc
 
 # Algorithm
 
+The following algorithm describes `SAMME.C2`, a cost-sensitive multi-class AdaBoost algorithm:
+
+```latex
 \begin{algorithm}[H]
 \LinesNumberedHidden
 \SetAlgoNoLine
@@ -28,6 +31,9 @@ SAMME.C2 leverages the power of both SAMME and cost-sensitive learning to enhanc
 	}
 	\caption{\texttt{SAMME.C2}: Cost-sensitive multi-class AdaBoost}\label{alg:sammec2}
 \end{algorithm}
+
+# Usage
+Please refer to the Python test file named samme_c2_test.ipynb for assessing the SAMME.C2 coding. This file contains test cases and usage examples for the SAMME.C2 algorithm. 
 
 # Contributing 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
