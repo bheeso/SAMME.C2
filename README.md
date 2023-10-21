@@ -18,4 +18,5 @@ Please refer to the Python test file named samme_c2_test.ipynb for assessing the
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 # Reference
-So B, Boucher JP, Valdez EA (2021) Cost-sensitive multi-class adaboost for understanding driving behavior based on telematics. ASTIN Bulletin: The Journal of the IAA 51(3):719–751
+So B, Valdez EA (2023) SAMME.C2 algorithm for imbalanced multi-class classification. Manuscript submitted for publication.
+So B, Boucher JP, Valdez EA (2021) Cost-sensitive multi-class adaboost for understanding driving behavior based on telematics. ASTIN Bulletin: The Journal of the IAA 51(3):719–751.
